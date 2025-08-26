@@ -1,0 +1,136 @@
+[versions]
+# Build
+versionName = "1.0"
+versionCode = "1"
+minSdkVersion = "28"
+targetSdkVersion = "36"
+compileSdkVersion = "36"
+
+# Android
+androidXCore = "1.17.0"
+androidXLifecycle = "2.9.2"
+androidXConstraintLayout = "2.2.1"
+androidXFragment = "1.8.9"
+androidXActivity = "1.10.1"
+androidXAppCompat = "1.7.1"
+androidXRecyclerView = "1.4.0"
+hilt = "2.57.1"
+compose-bom = "2025.08.00"
+compose-activity = "1.10.1"
+coil = "3.3.0"
+
+# Kotlin
+kotlin = "2.2.10"
+coroutine = "1.10.2"
+kotlinSerialize = "1.9.0"
+
+# Network
+retrofit = "2.11.0"
+okHttp = "5.1.0"
+
+# ETC
+jodaTime = "2.14.0"
+javaxInject = "1"
+
+# Plugin
+androidGradle = "8.12.1"
+ksp-gradle = "2.2.10-2.0.2"
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradle" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp-gradle" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
+#Custom Plugins
+custom-android-application = { id = "custom.application" }
+custom-android-applicationConfig = { id = "custom.application.config" }
+custom-android-library = { id = "custom.android.library" }
+custom-android-hilt = { id = "custom.android.hilt" }
+custom-navigation-library = { id = "custom.navigation.library" }
+custom-feature-library = { id = "custom.feature.library" }
+custom-android-libraryCompose = { id = "custom.android.library.compose" }
+
+[libraries]
+# Android
+android-gradle = { module = "com.android.tools.build:gradle", version.ref = "androidGradle" }
+androidx-core = { module = "androidx.core:core-ktx", version.ref = "androidXCore" }
+androidx-lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "androidXLifecycle" }
+androidx-lifecycle-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "androidXLifecycle" }
+androidx-lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidXLifecycle" }
+androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "androidXConstraintLayout" }
+androidx-fragment = { module = "androidx.fragment:fragment-ktx", version.ref = "androidXFragment" }
+androidx-activity = { module = "androidx.activity:activity-ktx", version.ref = "androidXActivity" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidXAppCompat" }
+androidx-recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "androidXRecyclerView" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compile = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+
+# Kotlin
+coroutine-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutine" }
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin" }
+kotlin-gradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlin-serialize = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinSerialize" }
+kotlin-serialization-jvm = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json-jvm", version.ref = "kotlinSerialize" }
+
+#compose
+compose-core-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+compose-core-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "compose-activity" }
+compose-core-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "androidXLifecycle" }
+compose-core-lifecycle = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidXLifecycle" }
+compose-androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+compose-androidx-material1 = { group = "androidx.compose.material", name = "material" }
+compose-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+compose-preview-tool = { group = "androidx.compose.ui", name = "ui-tooling" }
+
+coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil" }
+
+# ETC
+jodaTime = { module = "joda-time:joda-time", version.ref = "jodaTime" }
+javax-inject = { module = "javax.inject:javax.inject", version.ref = "javaxInject" }
+
+# Network
+retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-gson-converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+retrofit-rxjava-adapter = { group = "com.squareup.retrofit2", name = "adapter-rxjava3", version.ref = "retrofit" }
+kotlinXSerializeConverter = { group = "com.squareup.retrofit2", name = "converter-kotlinx-serialization", version.ref = "retrofit" }
+okhttp-core = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okHttp" }
+okhttp-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okHttp" }
+
+
+[bundles]
+android-core = [
+    "androidx-core",
+    "androidx-fragment",
+    "androidx-activity",
+    "androidx-appcompat",
+    "androidx-recyclerview",
+    "androidx-constraintlayout"
+]
+
+android-lifecycle = [
+    "androidx-lifecycle-runtime",
+    "androidx-lifecycle-livedata",
+    "androidx-lifecycle-viewmodel"
+]
+compose = [
+    "compose-core-activity",
+    "compose-core-viewmodel",
+    "compose-core-lifecycle",
+    "compose-androidx-material3",
+    "compose-androidx-material1"
+]
+
+retrofit = [
+    "retrofit-core",
+    "retrofit-gson-converter",
+    "retrofit-rxjava-adapter"
+]
+
+okhttp = [
+    "okhttp-core",
+    "okhttp-logging-interceptor"
+]
