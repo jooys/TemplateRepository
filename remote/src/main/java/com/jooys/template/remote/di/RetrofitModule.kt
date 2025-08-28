@@ -1,5 +1,6 @@
 package com.jooys.template.remote.di
 
+import com.jooys.template.remote.intercepor.LoggingInterceptor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -20,15 +21,21 @@ object RetrofitModule {
 
     @Provides
     @Singleton
+    fun provideLoggingInterceptor(): LoggingInterceptor {
+        return LoggingInterceptor()
+    }
+    @Provides
+    @Singleton
     @Named("provideCommonOkHttpClient")
     fun provideCommonOkHttpClient(
+        loggingInterceptor: LoggingInterceptor,
     ): OkHttpClient {
-        val builder = OkHttpClient.Builder()
-        builder.readTimeout(10, TimeUnit.SECONDS)
-        builder.connectTimeout(10, TimeUnit.SECONDS)
-        builder.writeTimeout(10, TimeUnit.SECONDS)
-
-        return builder.build()
+        return OkHttpClient.Builder(). apply {
+            readTimeout(10, TimeUnit.SECONDS)
+            connectTimeout(10, TimeUnit.SECONDS)
+            writeTimeout(10, TimeUnit.SECONDS)
+            addInterceptor(loggingInterceptor)
+        }.build()
     }
 
     @Provides

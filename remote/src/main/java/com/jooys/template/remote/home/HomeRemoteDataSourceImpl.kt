@@ -14,8 +14,8 @@ class HomeRemoteDataSourceImpl @Inject constructor(
     private val homeService: HomeService
 ) : HomeRemoteDataSource {
 
-    override suspend fun getIntelligence(needSN: Boolean): IntelligenceEntity.Response {
-        return homeService.getIntelligence(needSN)
+    override suspend fun getIntelligence(version: String): IntelligenceEntity.Response {
+        return homeService.getIntelligence(version, "android")
     }
 }
 

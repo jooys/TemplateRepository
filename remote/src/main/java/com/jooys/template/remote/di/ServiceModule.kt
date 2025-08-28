@@ -14,6 +14,7 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object ServiceModule {
+    private const val BASE_URL = "https://test.api.ddocdoc.kr"
 
     @Provides
     @Singleton
@@ -21,7 +22,7 @@ object ServiceModule {
         retrofitBuilder: Retrofit.Builder,
         @Named("provideCommonOkHttpClient") okHttpClient: OkHttpClient
     ): HomeService = retrofitBuilder
-        .client(okHttpClient).baseUrl("https://www.naver.com").build()
+        .client(okHttpClient).baseUrl(BASE_URL).build()
         .create()
 
 }

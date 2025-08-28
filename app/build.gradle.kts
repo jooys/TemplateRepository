@@ -36,4 +36,6 @@ dependencies {
     implementation(libs.retrofit.core)
     //DateTime
     implementation(libs.jodaTime)
+
+    implementation(libs.logger)
 }

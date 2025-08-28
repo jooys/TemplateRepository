@@ -32,6 +32,7 @@ okHttp = "5.1.0"
 jodaTime = "2.14.0"
 javaxInject = "1"
 graph-assertion = "2.7.3"
+logger = "2.2.0"
 
 # Plugin
 androidGradle = "8.12.1"
@@ -93,6 +94,7 @@ coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref 
 # ETC
 jodaTime = { module = "joda-time:joda-time", version.ref = "jodaTime" }
 javax-inject = { module = "javax.inject:javax.inject", version.ref = "javaxInject" }
+logger = { module = "com.orhanobut:logger", version.ref = "logger" }
 
 # Network
 retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }

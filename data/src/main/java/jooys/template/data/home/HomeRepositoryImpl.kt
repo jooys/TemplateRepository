@@ -14,8 +14,8 @@ class HomeRepositoryImpl @Inject constructor(
 ): HomeRepository {
 
 
-    override suspend fun getIntelligence(needSN: Boolean): IntelligenceEntity.Response {
-        return homeRemoteDataSource.getIntelligence(needSN)
+    override suspend fun getIntelligence(version: String): Result<IntelligenceEntity.Response> {
+        return runCatching { homeRemoteDataSource.getIntelligence(version) }
     }
 }
 

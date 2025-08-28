@@ -4,5 +4,5 @@ import com.jooys.template.model.home.IntelligenceEntity
 
 interface HomeRepository {
 
-    suspend fun getIntelligence(needSN: Boolean = false): IntelligenceEntity.Response
+    suspend fun getIntelligence(version: String): Result<IntelligenceEntity.Response>
 }
