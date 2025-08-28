@@ -6,6 +6,7 @@ pluginManagement {
     repositories {
         google()
         mavenCentral()
+        gradlePluginPortal()
     }
 }
 
@@ -19,11 +20,9 @@ dependencyResolutionManagement {
     }
 }
 
-include(
-    ":app",
-    ":data",
-    ":domain",
-    ":remote",
-    ":shared",
-    ":core-design"
-)
+include(":app")
+include(":data")
+include(":domain")
+include(":remote")
+include(":model")
+include(":core-design")

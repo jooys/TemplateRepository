@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="91pt" height="116pt" viewBox="0 0 91 116">
+    <g class="graph" transform="translate(4 112)">
+        <title>G</title>
+        <path fill="#fff" d="M-4 4v-116h91.25V4z"/>
+        <g class="node">
+            <title>:domain</title>
+            <ellipse cx="41.63" cy="-90" fill="none" stroke="#000" rx="41.63" ry="18"/>
+            <text xml:space="preserve" x="41.63" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:domain</text>
+        </g>
+        <g class="node">
+            <title>:model</title>
+            <ellipse cx="41.63" cy="-18" fill="none" stroke="#000" rx="37.02" ry="18"/>
+            <text xml:space="preserve" x="41.63" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:model</text>
+        </g>
+        <g class="edge">
+            <title>:domain-&gt;:model</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M41.63-71.7v24.16"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m45.13-49.13-3.5 10-3.5-10z"/>
+        </g>
+    </g>
+</svg>

@@ -31,6 +31,7 @@ okHttp = "5.1.0"
 # ETC
 jodaTime = "2.14.0"
 javaxInject = "1"
+graph-assertion = "2.7.3"
 
 # Plugin
 androidGradle = "8.12.1"
@@ -44,6 +45,7 @@ kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp-gradle" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+graph-assertion = { id = "com.jraska.module.graph.assertion", version.ref = "graph-assertion" }
 
 #Custom Plugins
 custom-android-application = { id = "custom.application" }

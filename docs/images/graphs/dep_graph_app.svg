@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="358pt" height="332pt" viewBox="0 0 358 332">
+    <g class="graph" transform="translate(4 328)">
+        <title>G</title>
+        <path fill="#fff" d="M-4 4v-332h358.1V4z"/>
+        <g class="node">
+            <title>:app</title>
+            <ellipse cx="141.63" cy="-306" fill="none" stroke="#000" rx="27" ry="18"/>
+            <text xml:space="preserve" x="141.63" y="-300.95" font-family="Times,serif" font-size="14" text-anchor="middle">:app</text>
+        </g>
+        <g class="node">
+            <title>:domain</title>
+            <ellipse cx="41.63" cy="-90" fill="none" stroke="#000" rx="41.63" ry="18"/>
+            <text xml:space="preserve" x="41.63" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:domain</text>
+        </g>
+        <g class="edge">
+            <title>:app-&gt;:domain</title>
+            <path fill="none" stroke="#000" d="M123.56-292.4c-12.88 9.77-29.81 24.32-40.93 40.4-27.91 40.36-36.83 98.17-39.68 132.42"/>
+            <path stroke="#000" d="m46.45-119.35-4.19 9.74-2.8-10.22z"/>
+        </g>
+        <g class="node">
+            <title>:data</title>
+            <ellipse cx="92.63" cy="-162" fill="none" stroke="#000" rx="28.83" ry="18"/>
+            <text xml:space="preserve" x="92.63" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:data</text>
+        </g>
+        <g class="edge">
+            <title>:app-&gt;:data</title>
+            <path fill="none" stroke="#000" d="M124.01-291.86c-11.33 9.61-25.08 23.76-31.38 39.86-7.54 19.26-7.2 42.72-5.15 60.72"/>
+            <path stroke="#000" d="m90.92-191.97-2.08 10.39-4.85-9.42z"/>
+        </g>
+        <g class="node">
+            <title>:remote</title>
+            <ellipse cx="141.63" cy="-234" fill="none" stroke="#000" rx="39.58" ry="18"/>
+            <text xml:space="preserve" x="141.63" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:remote</text>
+        </g>
+        <g class="edge">
+            <title>:app-&gt;:remote</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M141.63-287.7v24.16"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m145.13-265.13-3.5 10-3.5-10z"/>
+        </g>
+        <g class="node">
+            <title>:model</title>
+            <ellipse cx="130.63" cy="-18" fill="none" stroke="#000" rx="37.02" ry="18"/>
+            <text xml:space="preserve" x="130.63" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:model</text>
+        </g>
+        <g class="edge">
+            <title>:app-&gt;:model</title>
+            <path fill="none" stroke="#000" d="M159.24-291.86c11.34 9.61 25.08 23.76 31.39 39.86 5.83 14.9 2.26 20.16 0 36-8.89 62.23-33.87 131.9-48.65 169.44"/>
+            <path stroke="#000" d="m145.28-45.38-6.96 7.99.46-10.59z"/>
+        </g>
+        <g class="node">
+            <title>:core-design</title>
+            <ellipse cx="293.63" cy="-234" fill="none" stroke="#000" rx="56.47" ry="18"/>
+            <text xml:space="preserve" x="293.63" y="-228.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core-design</text>
+        </g>
+        <g class="edge">
+            <title>:app-&gt;:core-design</title>
+            <path fill="none" stroke="#000" d="M163.4-294.97c23.11 10.64 60.16 27.7 88.84 40.91"/>
+            <path stroke="#000" d="m253.4-257.38 7.62 7.36-10.55-1z"/>
+        </g>
+        <g class="edge">
+            <title>:domain-&gt;:model</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M60.94-73.81c12.21 9.6 28.2 22.18 41.78 32.86"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m103.58-44.72 5.7 8.93-10.02-3.43z"/>
+        </g>
+        <g class="edge">
+            <title>:data-&gt;:domain</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M81.05-145.12c-6.17 8.48-13.91 19.1-20.89 28.69"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m64.01-115.77-8.72 6.02 3.06-10.15z"/>
+        </g>
+        <g class="edge">
+            <title>:data-&gt;:model</title>
+            <path fill="none" stroke="#000" d="M97.21-143.87c6.42 23.99 18.17 67.88 25.88 96.71"/>
+            <path stroke="#000" d="m126.43-48.22-.79 10.57-5.97-8.76z"/>
+        </g>
+        <g class="edge">
+            <title>:remote-&gt;:data</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M130.01-216.41c-5.88 8.4-13.14 18.78-19.7 28.15"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m114.16-187.65-8.61 6.18 2.87-10.2z"/>
+        </g>
+        <g class="edge">
+            <title>:remote-&gt;:model</title>
+            <path fill="none" stroke="#000" d="M140.75-215.85c-1.89 36.71-6.34 123.19-8.66 168.32"/>
+            <path stroke="#000" d="m135.6-47.55-4.01 9.81-2.98-10.17z"/>
+        </g>
+    </g>
+</svg>
