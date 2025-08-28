@@ -4,7 +4,7 @@
 
 ## 📌 개요
 
-`TemplateRepository`는 Android 애플리케이션 개발을 위한 멀티 모듈 구조의 템플릿 프로젝트입니다.
+`TemplateRepository`는 Android 애플리케이션 개발을 위한 멀티 모듈 구조의 템플릿 프로젝트입니다.<br>
 `Clean Architecture`와 `Gradle Build Logic`을 기반으로, 재사용성과 확장성을 고려하여 설계되었습니다.
 
 ## 개발 환경
