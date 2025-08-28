@@ -9,7 +9,7 @@ android {
 
 dependencies {
     //Modules
-    implementation(projects.shared)
+    implementation(projects.model)
     implementation(projects.data)
 
     //Retrofit2 (Network)

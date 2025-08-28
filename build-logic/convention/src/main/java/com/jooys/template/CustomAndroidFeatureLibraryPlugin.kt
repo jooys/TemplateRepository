@@ -12,9 +12,8 @@ class CustomAndroidFeatureLibraryPlugin : Plugin<Project> {
 
             dependencies {
                 implementation(project(":domain"))
-                implementation(project(":shared"))
+                implementation(project(":model"))
                 implementation(project(":core-design"))
-                implementation(project(":feature:core"))
             }
         }
     }

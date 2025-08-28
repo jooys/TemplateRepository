@@ -20,7 +20,7 @@ dependencies {
     implementation(projects.domain)
     implementation(projects.data)
     implementation(projects.remote)
-    implementation(projects.shared)
+    implementation(projects.model)
     implementation(projects.coreDesign)
 
     implementation(libs.coroutine.android)

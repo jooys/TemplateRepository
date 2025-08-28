@@ -1,4 +1,4 @@
-package com.jooys.template.shared.model.home
+package com.jooys.template.model.home
 
 sealed class IntelligenceEntity {
     data class Response(

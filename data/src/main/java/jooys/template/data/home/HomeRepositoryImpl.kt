@@ -1,7 +1,7 @@
 package jooys.template.data.home
 
 import com.jooys.template.home.HomeRepository
-import com.jooys.template.shared.model.home.IntelligenceEntity
+import com.jooys.template.model.home.IntelligenceEntity
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

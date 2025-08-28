@@ -36,7 +36,7 @@ MAC OS : macOS sequoia 15.6.1
      ┣ data/               # 데이터 계층 (API, DB, Repository 구현체)
      ┣ domain/             # 도메인 계층 (UseCase, Repository 인터페이스, 비즈니스 로직)
      ┣ build-logic/        # Gradle 빌드 로직 모듈 (플러그인, convention 설정)
-     ┣ shared/             # API 모델 구성 모듈 (Entity 정의)
+     ┣ model/             # API 모델 구성 모듈 (Entity 정의)
      ┣ gradle/             # Gradle wrapper 설정
      ┣ build.gradle.kts    # 프로젝트 전체 빌드 스크립트
      ┣ settings.gradle.kts # 모듈 포함 및 Gradle 세팅
@@ -90,9 +90,9 @@ MAC OS : macOS sequoia 15.6.1
 
 ------------------------------------------------------------------------
 
-### 6. `shared`
+### 6. `model`
 
-- `Entity` 정의 모듈
-- API에서 사용하는 Entity 정의
+- `Model Entity` 정의 모듈
+- API에서 사용하는 Model 정의
 
 ------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 package com.jooys.template.remote.home
 
 import jooys.template.data.home.HomeRemoteDataSource
-import com.jooys.template.shared.model.home.IntelligenceEntity
+import com.jooys.template.model.home.IntelligenceEntity
 import com.jooys.template.remote.service.HomeService
 import dagger.Binds
 import dagger.Module

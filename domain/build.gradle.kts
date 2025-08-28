@@ -4,7 +4,7 @@ plugins {
 }
 
 dependencies {
-    implementation(projects.shared)
+    implementation(projects.model)
 
     implementation(libs.kotlin.stdlib)
 

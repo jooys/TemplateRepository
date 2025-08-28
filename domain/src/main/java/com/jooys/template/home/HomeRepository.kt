@@ -1,6 +1,6 @@
 package com.jooys.template.home
 
-import com.jooys.template.shared.model.home.IntelligenceEntity
+import com.jooys.template.model.home.IntelligenceEntity
 
 interface HomeRepository {
 

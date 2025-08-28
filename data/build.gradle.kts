@@ -9,7 +9,7 @@ android {
 
 dependencies {
     //Modules
-    implementation(projects.shared)
+    implementation(projects.model)
     implementation(projects.domain)
 
     implementation(libs.coroutine.android)
