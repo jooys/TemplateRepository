@@ -9,14 +9,14 @@
 
 ## 개발 환경
 
-Android Studio Narwhal Feature Drop | 2025.1.2
+Android Studio Narwhal Feature Drop | 2025.1.2<br>
 MAC OS : macOS sequoia 15.6.1
 
 ## 어플리케이션 버전
 
-'minSdkVersion' : API 28 (Android 9.0)
-'targetSdkVersion' : API 36 (Android 16)
-'compileSdkVersion' : API 36 (Android 16)
+`minSdkVersion` : API 28 (Android 9.0) <br>
+`targetSdkVersion` : API 36 (Android 16) <br>
+`compileSdkVersion` : API 36 (Android 16) <br>
 
 ## 🧩 기술 스택
 
