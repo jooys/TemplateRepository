@@ -14,6 +14,8 @@ MAC OS : macOS sequoia 15.6.1
 
 ## 어플리케이션 버전
 
+`Android Gradle Platform` : 8.12.1 <br>
+`kotlin` : 2.2.10 <br>
 `minSdkVersion` : API 28 (Android 9.0) <br>
 `targetSdkVersion` : API 36 (Android 16) <br>
 `compileSdkVersion` : API 36 (Android 16) <br>
