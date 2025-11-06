@@ -18,9 +18,5 @@ dependencies {
     api(libs.bundles.retrofit)
     api(libs.kotlinXSerializeConverter)
 
-    //DateTime
-    implementation(libs.jodaTime)
-
-
     implementation(libs.logger)
 }

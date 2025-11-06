@@ -29,13 +29,12 @@ retrofit = "2.11.0"
 okHttp = "5.1.0"
 
 # ETC
-jodaTime = "2.14.0"
 javaxInject = "1"
 graph-assertion = "2.7.3"
 logger = "2.2.0"
 
 # Plugin
-androidGradle = "8.12.1"
+androidGradle = "8.12.3"
 ksp-gradle = "2.2.10-2.0.2"
 
 [plugins]
@@ -92,7 +91,6 @@ compose-preview-tool = { group = "androidx.compose.ui", name = "ui-tooling" }
 coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil" }
 
 # ETC
-jodaTime = { module = "joda-time:joda-time", version.ref = "jodaTime" }
 javax-inject = { module = "javax.inject:javax.inject", version.ref = "javaxInject" }
 logger = { module = "com.orhanobut:logger", version.ref = "logger" }
 

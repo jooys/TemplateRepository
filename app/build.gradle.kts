@@ -34,8 +34,6 @@ dependencies {
     implementation(libs.coil.compose)
 
     implementation(libs.retrofit.core)
-    //DateTime
-    implementation(libs.jodaTime)
 
     implementation(libs.logger)
 }
