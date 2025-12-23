@@ -3,8 +3,8 @@
 versionName = "1.0"
 versionCode = "1"
 minSdkVersion = "26"
-targetSdkVersion = "33"
-compileSdkVersion = "33"
+targetSdkVersion = "35"
+compileSdkVersion = "36"
 
 # Android
 androidXCore = "1.17.0"

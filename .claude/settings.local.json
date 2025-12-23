@@ -4,7 +4,9 @@
       "Bash(cat:*)",
       "Bash(./gradlew tasks:*)",
       "Bash(./gradlew help:*)",
-      "Bash(wc:*)"
+      "Bash(wc:*)",
+      "Bash(tree:*)",
+      "Bash(python3:*)"
     ]
   }
 }
