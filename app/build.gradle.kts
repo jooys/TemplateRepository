@@ -8,7 +8,6 @@ plugins {
 
 android {
     namespace = "com.jooys.template"
-    compileSdk = 36
 
     defaultConfig {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -21,7 +20,16 @@ dependencies {
     implementation(projects.data)
     implementation(projects.remote)
     implementation(projects.model)
-    implementation(projects.coreDesign)
+    implementation(projects.local)
+    implementation(projects.core)
+
+    implementation(projects.feature.search.navigation)
+    implementation(projects.feature.search)
+    implementation(projects.feature.detail.navigation)
+    implementation(projects.feature.detail)
+    implementation(projects.feature.bookmark.navigation)
+    implementation(projects.feature.bookmark)
+
 
     implementation(libs.coroutine.android)
 

@@ -40,6 +40,10 @@ gradlePlugin {
             id = libs.plugins.custom.android.library.get().pluginId
             implementationClass = "com.jooys.template.CustomAndroidLibraryPlugin"
         }
+        register("customJvmLibraryPlugins") {
+            id = libs.plugins.custom.jvm.library.get().pluginId
+            implementationClass = "com.jooys.template.CustomJvmLibraryPlugin"
+        }
         register("customNavigationPlugins") {
             id = libs.plugins.custom.navigation.library.get().pluginId
             implementationClass = "com.jooys.template.CustomAndroidNavigationLibraryPlugin"

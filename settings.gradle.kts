@@ -1,4 +1,4 @@
-rootProject.name = "Template"
+rootProject.name = "TemplateRepository"
 
 pluginManagement {
     includeBuild("build-logic")
@@ -25,4 +25,12 @@ include(":data")
 include(":domain")
 include(":remote")
 include(":model")
-include(":core-design")
+include(":local")
+include(":core")
+include(":feature")
+include(":feature:search")
+include(":feature:search:navigation")
+include(":feature:detail")
+include(":feature:detail:navigation")
+include(":feature:bookmark")
+include(":feature:bookmark:navigation")

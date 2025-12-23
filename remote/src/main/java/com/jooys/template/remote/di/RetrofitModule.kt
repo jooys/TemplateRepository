@@ -1,9 +1,12 @@
 package com.jooys.template.remote.di
 
+import android.content.Context
+import com.jooys.template.remote.intercepor.AuthHeaderInterceptor
 import com.jooys.template.remote.intercepor.LoggingInterceptor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
@@ -24,16 +27,27 @@ object RetrofitModule {
     fun provideLoggingInterceptor(): LoggingInterceptor {
         return LoggingInterceptor()
     }
+
+
+    @Provides
+    @Singleton
+    fun provideCommonInterceptor(
+    ): AuthHeaderInterceptor {
+        return AuthHeaderInterceptor()
+    }
+
     @Provides
     @Singleton
     @Named("provideCommonOkHttpClient")
     fun provideCommonOkHttpClient(
+        authHeaderInterceptor: AuthHeaderInterceptor,
         loggingInterceptor: LoggingInterceptor,
     ): OkHttpClient {
-        return OkHttpClient.Builder(). apply {
+        return OkHttpClient.Builder().apply {
             readTimeout(10, TimeUnit.SECONDS)
             connectTimeout(10, TimeUnit.SECONDS)
             writeTimeout(10, TimeUnit.SECONDS)
+            addInterceptor(authHeaderInterceptor)
             addInterceptor(loggingInterceptor)
         }.build()
     }
@@ -41,7 +55,7 @@ object RetrofitModule {
     @Provides
     @Singleton
     fun provideBaseBuilder(
-        kotlinXConverter: Converter.Factory
+        kotlinXConverter: Converter.Factory,
     ): Retrofit.Builder {
         return Retrofit.Builder().apply {
             addConverterFactory(kotlinXConverter)
