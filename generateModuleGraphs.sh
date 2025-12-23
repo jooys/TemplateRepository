@@ -56,7 +56,7 @@ fi
 # Initialize an array to store excluded modules
 excluded_modules=()
 
-excluded_modules+=(":core-design")
+excluded_modules+=(":core")
 
 # Parse command-line arguments for excluded modules
 while [[ $# -gt 0 ]]; do

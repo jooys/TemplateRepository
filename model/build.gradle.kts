@@ -1,4 +1,5 @@
 plugins {
+    id(libs.plugins.custom.jvm.library.get().pluginId)
     id("kotlin")
     kotlin("plugin.serialization")
 }

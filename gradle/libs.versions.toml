@@ -2,25 +2,27 @@
 # Build
 versionName = "1.0"
 versionCode = "1"
-minSdkVersion = "28"
-targetSdkVersion = "36"
-compileSdkVersion = "36"
+minSdkVersion = "26"
+targetSdkVersion = "33"
+compileSdkVersion = "33"
 
 # Android
 androidXCore = "1.17.0"
-androidXLifecycle = "2.9.2"
+androidXLifecycle = "2.9.4"
 androidXConstraintLayout = "2.2.1"
 androidXFragment = "1.8.9"
-androidXActivity = "1.10.1"
+androidXActivity = "1.11.0"
 androidXAppCompat = "1.7.1"
 androidXRecyclerView = "1.4.0"
-hilt = "2.57.1"
-compose-bom = "2025.08.00"
-compose-activity = "1.10.1"
+hilt = "2.57.2"
+compose-bom = "2025.11.00"
+compose-activity = "1.11.0"
 coil = "3.3.0"
+androidXRoom = "2.8.3"
+material = "1.7.8"
 
 # Kotlin
-kotlin = "2.2.10"
+kotlin = "2.2.21"
 coroutine = "1.10.2"
 kotlinSerialize = "1.9.0"
 
@@ -30,16 +32,20 @@ okHttp = "5.1.0"
 
 # ETC
 javaxInject = "1"
-graph-assertion = "2.7.3"
+graph-assertion = "2.9.0"
 logger = "2.2.0"
 
 # Plugin
 androidGradle = "8.12.3"
-ksp-gradle = "2.2.10-2.0.2"
+ksp-gradle = "2.2.21-2.0.4"
+
+# Test
+kotest = "5.9.1"
+mockk = "1.13.17"
+turbine = "1.2.0"
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradle" }
-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
@@ -52,6 +58,7 @@ custom-android-application = { id = "custom.application" }
 custom-android-applicationConfig = { id = "custom.application.config" }
 custom-android-library = { id = "custom.android.library" }
 custom-android-hilt = { id = "custom.android.hilt" }
+custom-jvm-library = { id = "custom.jvm.library" }
 custom-navigation-library = { id = "custom.navigation.library" }
 custom-feature-library = { id = "custom.feature.library" }
 custom-android-libraryCompose = { id = "custom.android.library.compose" }
@@ -70,8 +77,11 @@ androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "a
 androidx-recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "androidXRecyclerView" }
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compile = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+room-core = { group = "androidx.room", name = "room-ktx", version.ref = "androidXRoom" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "androidXRoom" }
 
 # Kotlin
+coroutine-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutine" }
 coroutine-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutine" }
 kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin" }
 kotlin-gradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
@@ -84,11 +94,12 @@ compose-core-activity = { group = "androidx.activity", name = "activity-compose"
 compose-core-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "androidXLifecycle" }
 compose-core-lifecycle = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidXLifecycle" }
 compose-androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
-compose-androidx-material1 = { group = "androidx.compose.material", name = "material" }
 compose-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 compose-preview-tool = { group = "androidx.compose.ui", name = "ui-tooling" }
+compose-icon = { module = "androidx.compose.material:material-icons-core", version.ref = "material" }
 
 coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil" }
+coil-network = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", version.ref = "coil" }
 
 # ETC
 javax-inject = { module = "javax.inject:javax.inject", version.ref = "javaxInject" }
@@ -102,6 +113,12 @@ kotlinXSerializeConverter = { group = "com.squareup.retrofit2", name = "converte
 okhttp-core = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okHttp" }
 okhttp-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okHttp" }
 
+# Test
+turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+kotest-core = { group = "io.kotest", name = "kotest-assertions-core", version.ref = "kotest" }
+kotest-junit5 = { group = "io.kotest", name = "kotest-runner-junit5", version.ref = "kotest" }
+kotest-property = { group = "io.kotest", name = "kotest-property", version.ref = "kotest" }
 
 [bundles]
 android-core = [
@@ -123,7 +140,7 @@ compose = [
     "compose-core-viewmodel",
     "compose-core-lifecycle",
     "compose-androidx-material3",
-    "compose-androidx-material1"
+    "compose-icon"
 ]
 
 retrofit = [
@@ -135,4 +152,11 @@ retrofit = [
 okhttp = [
     "okhttp-core",
     "okhttp-logging-interceptor"
+]
+
+kotest = [
+    "kotest-core",
+    "kotest-property",
+    "kotest-junit5"
+
 ]

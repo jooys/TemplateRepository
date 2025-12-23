@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250pt" height="44pt" viewBox="0 0 250 44">
+    <g class="graph" transform="translate(4 40)">
+        <title>G</title>
+        <path fill="#fff" d="M-4 4v-44h249.91V4z"/>
+        <g class="node">
+            <title>:feature:bookmark:navigation</title>
+            <ellipse cx="120.96" cy="-18" fill="none" stroke="#000" rx="120.96" ry="18"/>
+            <text xml:space="preserve" x="120.96" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:feature:bookmark:navigation</text>
+        </g>
+    </g>
+</svg>

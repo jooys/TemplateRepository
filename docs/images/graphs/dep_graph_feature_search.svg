@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="923pt" height="188pt" viewBox="0 0 923 188">
+    <g class="graph" transform="translate(4 184)">
+        <title>G</title>
+        <path fill="#fff" d="M-4 4v-188h922.58V4z"/>
+        <g class="node">
+            <title>:feature:search</title>
+            <ellipse cx="245.63" cy="-162" fill="none" stroke="#000" rx="65.17" ry="18"/>
+            <text xml:space="preserve" x="245.63" y="-156.95" font-family="Times,serif" font-size="14" text-anchor="middle">:feature:search</text>
+        </g>
+        <g class="node">
+            <title>:domain</title>
+            <ellipse cx="41.63" cy="-90" fill="none" stroke="#000" rx="41.63" ry="18"/>
+            <text xml:space="preserve" x="41.63" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:domain</text>
+        </g>
+        <g class="edge">
+            <title>:feature:search-&gt;:domain</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M205.81-147.34c-34.99 12.01-85.77 29.43-121.57 41.72"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m87.1-102.9-10.6-.07 8.33-6.55z"/>
+        </g>
+        <g class="node">
+            <title>:model</title>
+            <ellipse cx="76.63" cy="-18" fill="none" stroke="#000" rx="37.02" ry="18"/>
+            <text xml:space="preserve" x="76.63" y="-12.95" font-family="Times,serif" font-size="14" text-anchor="middle">:model</text>
+        </g>
+        <g class="edge">
+            <title>:feature:search-&gt;:model</title>
+            <path fill="none" stroke="#000" d="M202.77-148.15c-23.3 8.58-51.48 21.71-72.14 40.15C111.6-91.02 97.15-65.72 88-46.43"/>
+            <path stroke="#000" d="m91.28-45.2-7.3 7.67.93-10.56z"/>
+        </g>
+        <g class="node">
+            <title>:core</title>
+            <ellipse cx="168.63" cy="-90" fill="none" stroke="#000" rx="29.34" ry="18"/>
+            <text xml:space="preserve" x="168.63" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:core</text>
+        </g>
+        <g class="edge">
+            <title>:feature:search-&gt;:core</title>
+            <path fill="none" stroke="#000" d="M227.38-144.41c-10.25 9.31-23.17 21.06-34.28 31.17"/>
+            <path stroke="#000" d="m195.53-110.73-9.76 4.14 5.05-9.32z"/>
+        </g>
+        <g class="node">
+            <title>:feature:search:navigation</title>
+            <ellipse cx="322.63" cy="-90" fill="none" stroke="#000" rx="106.63" ry="18"/>
+            <text xml:space="preserve" x="322.63" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:feature:search:navigation</text>
+        </g>
+        <g class="edge">
+            <title>:feature:search-&gt;:feature:search:navigation</title>
+            <path fill="none" stroke="#000" d="M263.87-144.41c9.39 8.53 21.01 19.09 31.44 28.57"/>
+            <path stroke="#000" d="m297.54-118.54 5.05 9.32-9.76-4.14z"/>
+        </g>
+        <g class="node">
+            <title>:feature:detail:navigation</title>
+            <ellipse cx="550.63" cy="-90" fill="none" stroke="#000" rx="103.56" ry="18"/>
+            <text xml:space="preserve" x="550.63" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:feature:detail:navigation</text>
+        </g>
+        <g class="edge">
+            <title>:feature:search-&gt;:feature:detail:navigation</title>
+            <path fill="none" stroke="#000" d="m294.63-149.75 184.24 42.28"/>
+            <path stroke="#000" d="m479.49-110.92 8.96 5.65-10.53 1.17z"/>
+        </g>
+        <g class="node">
+            <title>:feature:bookmark:navigation</title>
+            <ellipse cx="793.63" cy="-90" fill="none" stroke="#000" rx="120.96" ry="18"/>
+            <text xml:space="preserve" x="793.63" y="-84.95" font-family="Times,serif" font-size="14" text-anchor="middle">:feature:bookmark:navigation</text>
+        </g>
+        <g class="edge">
+            <title>:feature:search-&gt;:feature:bookmark:navigation</title>
+            <path fill="none" stroke="#000" d="M304.13-153.66c80.84 10.17 231.26 29.15 359.5 45.66 9.86 1.27 20.15 2.6 30.42 3.94"/>
+            <path stroke="#000" d="m694.21-107.57 9.46 4.76-10.37 2.18z"/>
+        </g>
+        <g class="edge">
+            <title>:domain-&gt;:model</title>
+            <path fill="none" stroke="red" stroke-width="2" d="M50.1-72.05c3.91 7.82 8.65 17.3 13.04 26.07"/>
+            <path fill="red" stroke="red" stroke-width="2" d="m65.54-49.01 1.34 10.51-7.6-7.38z"/>
+        </g>
+    </g>
+</svg>

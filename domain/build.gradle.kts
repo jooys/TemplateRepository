@@ -1,4 +1,5 @@
 plugins {
+    id(libs.plugins.custom.jvm.library.get().pluginId)
     id("kotlin")
     kotlin("plugin.serialization")
 }
@@ -11,7 +12,6 @@ dependencies {
     implementation(libs.javax.inject)
 
     implementation(libs.kotlin.serialize)
-    implementation(libs.coroutine.android)
+    implementation(libs.coroutine.core)
     implementation(libs.kotlin.serialization.jvm)
-
 }
